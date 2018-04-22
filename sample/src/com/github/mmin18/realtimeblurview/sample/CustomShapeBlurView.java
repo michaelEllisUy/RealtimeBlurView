@@ -29,7 +29,8 @@ public class CustomShapeBlurView extends RealtimeBlurView {
 	 * Custom oval shape
 	 */
 	@Override
-	protected void drawBlurredBitmap(Canvas canvas, Bitmap blurredBitmap, int overlayColor) {
+	protected void drawBlurredBitmap(Canvas canvas, Bitmap blurredBitmap, int overlayColor,
+									 float realtimeBorderRadius) {
 		if (blurredBitmap != null) {
 			mRectF.right = getWidth();
 			mRectF.bottom = getHeight();
